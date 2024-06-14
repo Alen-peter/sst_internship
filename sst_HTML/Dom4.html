@@ -1,0 +1,22 @@
+<html>
+    <head>
+      
+    </head>
+    <body>
+        <label>number</label>
+        <input type="text" id="a">
+        <label for="">number</label>
+        <input type="text" id="b">
+        <button onclick="add()">+</button>
+        <p id="demo"></p>
+        <script>
+            function add(){
+
+            var firstnum=parseInt(document.getElementById("a").value);
+            var secondnum=parseInt(document.getElementById("b").value);
+            var sum=firstnum+secondnum
+            document.getElementById("demo").innerText=sum
+            }
+        </script>
+    </body>
+</html>

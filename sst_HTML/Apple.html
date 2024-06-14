@@ -1,0 +1,90 @@
+<html>
+    <head><link rel="stylesheet" href="Assi2.css"></head>
+    <body>
+        <header>
+            <img src="images.jpeg" width="200px" alt="">
+            <nav>
+                <div class="menu-item"><a href="Assi4.html">Home</a></div>
+                <div class="menu-item"><a href="registration.html">Regiatration</a></div>
+                <div class="menu-item"><a href="product.html">Product</a></div>
+                <div class="menu-item"><a href="login.html">Login</a></div>
+            </nav>   
+        </header>
+        <img src="car1123.jpg" alt="">
+        <table>
+            <tr>
+                <td>
+                    product price:
+
+                </td>
+                <td>
+                    <input type="text"  id="price"> 
+                    <label for="" id="a"></label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                Quantity:
+           </td>
+           <td>
+          
+                <input type="text" id="quantity">
+                <label  id="b"></label>
+            </td>
+            <tr>
+                <td>
+                <label >Total Amount:</label>
+            </td>
+           <td>
+           
+            <label id="c"></label>
+        </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" onClick="display()">submit</button>
+                </td>
+            </tr>
+        </table>
+        <script>
+            function display(){
+                alert("hello");
+                var num1=document.getElementById("price").value;
+                alert(num1);
+                var num2=document.getElementById("quantity").value;
+                alert(num2);
+                var sum=num1*num2;
+                alert(sum);
+                var num3=document.getElementById('c').innerHTML=sum;
+
+            
+            if(num1 == ""){
+                document.getElementById('a').innerHTML="Enter the price";
+            }
+            /*else if(isNaN(num1))
+            {
+                document.getElementById('a').innerHTML="Enter number";    
+            }*/
+            // else{
+            //     document.getElementById('a').innerHTML="";
+            // }
+            if(num2 == ""){
+                document.getElementById('b').innerHTML="Enter Quantity";
+            }
+            /*else if(isNaN(num2))
+            {
+                document.getElementById('b').innerHTML="Enter only number";
+            }*/
+            // else{
+            //     document.getElementById('b').innerHTML="";
+            // }
+            }
+        </script>
+        <div></div>
+        <footer>
+            <p>Designed by UnknownUser</p>
+        </footer>
+    </body>
+</html>

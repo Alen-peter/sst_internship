@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <table>
+            <tr>
+                <td>FirstNum</td>
+                <td><input type="text" id="FirstNum"></td>
+            </tr>
+            <tr>
+                <td>SecondNum</td>
+                <td><input type="text" id="SecondNum"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="" onclick="display()">Just click</button></td>
+            </tr>
+        </table>
+        <script>
+            function display(){
+                var num1=document.getElementById("FirstNum").value;
+                var num2=document.getElementById("SecondNum").value;
+                var temp;
+                temp=num1;
+                num1=num2;
+                num2=temp;
+                document.getElementById("FirstNum").value=num1;
+                document.getElementById("SecondNum").value=num2;
+            }
+        </script>
+    </body>
+</html>

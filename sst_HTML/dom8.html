@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+        function validate(){
+            var num1=document.getElementById('a').value;
+            var letters=/^[a-zA-Z\s]+$/;
+            var password=document.getElementById("pas").value;
+
+            if(num1=="")
+            {
+               // document.write("enter name")
+               document.getElementById('b').innerHTML='Enter name';
+
+            }
+            else if(letters.test(num1)==false)
+            {
+                document.getElementById('b').innerHTML='Enter valid Alphabets';
+            }
+            if(password=="")
+            {
+                document.getElementById("pass").innerHTML="password";
+            }
+            else if(password<=8)
+            {
+                document.getElementById("pass").innerHTML="Enter at least 8 characters";
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <table>
+                <tr>
+
+                    <th>name</th>
+                    <td><input type="text" id="a">
+                    <label style="color: rgb(3, 71, 71);" for="" id="b"></label></td>
+
+                </tr>
+                <tr>
+                    <th>
+                        age
+                    </th>
+                    <td>
+                        <input type="text" name="" id="c">
+                        <label for="" id="d"></label>
+                    </td>
+                </tr>
+                <td>
+                    Password
+                </td>
+                <td><input type="password" name="password" id="pas">
+                <label id="pass"></label>
+                </td>
+                <tr>
+                    <td></td>
+                    <td>
+                    <button type="button" onclick="validate()">Login</button>
+                </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>

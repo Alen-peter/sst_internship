@@ -1,0 +1,59 @@
+<html>
+    <head><link rel="stylesheet" href="Assi2.css"></head>
+    <body style="background-color:rgb(159, 203, 221) ;">
+        <header>
+            <img src="images.jpeg" width="200px" alt="">
+            <nav>
+                <div class="menu-item"><a href="Assi4.html">Home</a></div>
+                <div class="menu-item"><a href="registration.html">Regiatration</a></div>
+                <div class="menu-item"><a href="product.html">Product</a></div>
+                <div class="menu-item"><a href="login.html">Login</a></div>
+            </nav>   
+        </header>
+      <a href="Assi4.html">Home</a>  
+      <table align="center">
+          <tr>
+              <td>
+                  <label>UserName</label>
+              </td>
+              <td> <input type="text" id="a"></td>
+          </tr>
+          <tr>
+              <td><label for="">Password</label></td>
+              <td>
+                  <input type="password" id="b"><br>
+              </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>
+
+                  <button type="button" onclick="display()">Login</button>
+              </td>
+          </tr>
+      </table>
+      <p id="demo"></p>
+
+      <div style="min-height: 419px;"></div>
+      <script>
+        function display(){
+             var n1=document.getElementById('a').value;
+             var n2=document.getElementById('b').value;
+
+             if(n1=="admin"&&n2=="123")
+             {
+                alert("You have successfully logged in");
+                window.location="Assi4.html"
+             }
+             else
+             {
+                 alert("Incorrect UserName or Password");
+             }
+            document.getElementById("demo").innerHTML=good
+        }
+    </script>
+        <footer>
+            <p>Designed by UnknownUser</p>
+        </footer>
+    </body>
+</html>
